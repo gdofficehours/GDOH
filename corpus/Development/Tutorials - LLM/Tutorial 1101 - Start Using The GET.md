@@ -10,20 +10,21 @@ publish: true
 
 **Outcome.** By the end of this tutorial, you've held your first real GET conversation — described an idea, gotten back a project plan for your narrative or worldbuilding project which might include role identification, features, and a build order.
 
-**Before you start.** Read the **Situated Player Roles** (The Investigator, The Traveler, The Dreamer) and the **Small Worlds** pages first. The GET opens by asking which one you're working in, so you'll want to arrive already knowing them.
+**Before you start.** Read at least one of the [[The-GET/corpus/Design/Storytelling/index|Situated Player Roles]] (The Investigator, The Traveler, The Dreamer) or the [[The-GET/corpus/Design/Worldbuilding/index|Bounded Worlds]] framework first. The GET will ask which one you're working in, so you'll want to arrive already knowing at least one of them.
 
-**Prerequisites.**
-- For Gemini -- [[Tutorial 1004 - Set Up The GET for Gemini]]. Gemini is installed, authenticated, and pointed at The GET.
-- For Claude Code -- *forthcoming*
-- For Codex -- *forthcoming*
+**Prerequisites.** (one is needed)
+- For Gemini -- [[Tutorial 1004 - Set Up The GET for Gemini]]
+- For Claude Code -- [[Tutorial 1014 - Set Up The GET for Claude Code]]
+- For Codex -- [[Tutorial 1024 - Set Up The GET for Codex]]
+- For Deepseek -- [[Tutorial 1034 - Set Up The GET for DeepSeek]]
 
 ---
 
 ## 1. Start Your Session
 
-#### *Already have your CLI running with the GET greeting? Skip to Section 2.*
+#### *Not using the terminal or already have your CLI running with the GET greeting? Skip to Section 2.*
 
-Do this every time you come back to the GET — first time, after a break, or after you've closed your terminal. The same four steps every time:
+Do this every time you've closed The GET in the terminal:
 
 1. **Open your terminal.**
    - Windows: Windows Key → type `PowerShell` → Enter
@@ -33,21 +34,18 @@ Do this every time you come back to the GET — first time, after a break, or af
 	- gemini
 	- claude
 	- codex
+	- deepcode
 4. **At the prompt, type:** `Start a GET session.`
 
-The GET will greet you and ask which role you're working in — The Investigator, The Traveler, or The Dreamer (or instead, Small Worlds).
+The GET will greet you and ask which role you're working in — The Investigator, The Traveler, or The Dreamer (or instead, Bounded Worlds).
 
 ---
 
 ## 2. Try Your Idea
 
-Tell the GET about an idea you have. Something concrete is best — describe the **experience**, not the mechanics. For example:
+Tell the GET about an idea you have. Something concrete is best — describe the **experience**, not the mechanics. 
 
-> I have an idea for a small game. The player wakes up in an abandoned library at night. There are clues scattered across the desks — a torn diary, a strange map, a photo. The player has to piece together what happened to the librarian.
-
-That's an **Investigator** idea — a world read as evidence. Pick the role that best fits whatever you bring; the example above happens to be one of the three.
-
-You don't need a finished concept. A situation you can picture is enough to plan outward from.
+You don't need a finished concept. A situation you can picture is enough.  Perhaps 4 to 8 sentences.  There certainly can be unknowns.
 
 
 
@@ -64,4 +62,4 @@ You don't need a finished concept. A situation you can picture is enough to plan
 
 - Ask the GET to **save your plan to a file** in the GET folder (e.g., `project-plan-mygame.md`) — useful when you're exploring multiple ideas in parallel
 - Ask for a **reference to look at** from the bundle's `References/` folder (*Gone Home*, *What Remains of Edith Finch*, etc.) when an idea reminds you of something you can't quite name
-- Open the same GET folder in another LLM front-end (e.g., Deepseek) — the same workflow applies because The GET's content lives in the folder, not in the agent
+- Open the same GET folder in another LLM front-end — the same workflow applies because The GET's content lives in the folder, not in the agent

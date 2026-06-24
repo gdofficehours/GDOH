@@ -34,13 +34,15 @@ publish: true
 4. Extract the ZIP:
    - **Windows:** Right-click the downloaded file → **Extract All…**
    - **macOS:** Double-click the file in Finder.
-5. Move the resulting folder (named `The-GET-main`) to your `Documents` folder, or anywhere easy to find.
+5. Rename the resulting folder to `The-GET`, then move it to your `Documents` folder (or anywhere easy to find).
 
 <span class="hint">GitHub may cover the Download ZIP button with a "Sign in" banner. You don't need a GitHub account — dismiss the banner if it appears.</span>
 
 ### Option B. (lets you fetch updates later) Git clone 
 
-If you already have `git` installed, this is the better path. The GET gets updated over time; with a clone, future updates take one command (`git pull`) instead of a full re-download.
+This path uses **Git**. Most Macs already have it. On Windows it isn't included, so install it once first: go to [git-scm.com/downloads/win](https://git-scm.com/downloads/win), run the installer, accept the defaults (leave **"Add Git to PATH"** checked), then close and reopen your terminal. (Not sure you want this path? Option A above needs no Git.)
+
+With Git in place, this is the better long-term path: the GET gets updated over time, and a clone means future updates take one command (`git pull`) instead of a full re-download.
 
 1. In your terminal, navigate to where you want the folder. For Documents:
    ```
@@ -52,7 +54,7 @@ If you already have `git` installed, this is the better path. The GET gets updat
    git clone https://github.com/vLabUSC/The-GET.git
    ```
 
-3. The folder will be named `The-GET` (no `-main` suffix this time).
+3. The folder will be named `The-GET`.
 
 4. Later, to fetch updates: navigate into the folder and run `git pull`.
 
@@ -67,7 +69,7 @@ If you already have `git` installed, this is the better path. The GET gets updat
 In your terminal, type `cd ` (with a trailing space) and then **drag the GET folder** into the terminal window. The folder's path gets pasted automatically. Press Enter.
 
 Example on Windows after the drag.   This is only an example, your path will be different:
-cd "C:\Users\you\Documents\The-GET-main"
+cd "C:\Users\you\Documents\The-GET"
 
 
 ### B. Start Gemini
@@ -88,7 +90,7 @@ A browser window opens. Sign in with your **personal Google account**. (Avoid sc
 
 ### D. Trust the folder
 
-Gemini next asks whether to trust the current folder or its parent. Pick **the current folder** (the one called `The-GET-main` or `The-GET`, not its parent).
+Gemini next asks whether to trust the current folder or its parent. Pick **the current folder** (the one called `The-GET`, not its parent).
 
 Trusting the folder lets Gemini read The GET's content. Trusting the parent would extend access to everything else in `Documents`, which Gemini doesn't need.
 

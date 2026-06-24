@@ -42,10 +42,10 @@ If you don't have it already:
 ## 3. Open The GET folder
 
 1. Choose **File → Open Folder…** (or **File → Open…** on macOS).
-2. Navigate to the GET folder you downloaded in [[Tutorial 1024 - Set Up The GET for Codex|Tutorial 1024]] (e.g., `Documents/The-GET-main` or `Documents/The-GET`).
+2. Navigate to the GET folder you downloaded in [[Tutorial 1024 - Set Up The GET for Codex|Tutorial 1024]] (e.g., `Documents/The-GET`).
 3. Click **Select Folder** (Windows) or **Open** (macOS).
 
-The left sidebar (the **Explorer**) shows the file tree — `_welcome/`, `agent/`, `corpus/` (Tutorials, Wiki, player roles, References), `gaps/`, and `student-notes-private/`.
+The left sidebar (the **Explorer**) shows the file tree — `agent/`, `corpus/` (GET Started, Design, Development), `gaps/`, and `student-notes-private/`.
 
 <span class="hint">If VSCode asks "Do you trust the authors of the files in this folder?" — pick **Yes, I trust the authors**. The GET is your downloaded content.</span>
 

@@ -30,13 +30,18 @@ publish: true
 4. Extract the ZIP:
    - **Windows:** Right-click the downloaded file → **Extract All…**
    - **macOS:** Double-click the file in Finder.
-5. Move the resulting folder (named `The-GET-main`) to your `Documents` folder, or anywhere easy to find.
+5. Rename the resulting folder to `The-GET`, then move it to your `Documents` folder (or anywhere easy to find).
 
 <span class="hint">GitHub may cover the Download ZIP button with a "Sign in" banner. You don't need a GitHub account — dismiss it.</span>
 
 ### Option B. (lets you fetch updates later) Git clone
 
-1. In your terminal: `cd ~/Documents`
+*This path uses **Git**. Most Macs already have it. On Windows it isn't included, so install it once first: go to [git-scm.com/downloads/win](https://git-scm.com/downloads/win), run the installer, accept the defaults (leave **"Add Git to PATH"** checked), then close and reopen your terminal. (Not sure you want this path? Option A above needs no Git.)*
+
+1. In your terminal, go to your Documents folder:
+   ```
+   cd ~/Documents
+   ```
 2. Clone the repo:
    ```
    git clone https://github.com/vLabUSC/The-GET.git
@@ -45,16 +50,16 @@ publish: true
 
 ---
 
-## 2. Point Deep Code at the folder
+## 2. Point Deep Code at the folder and launch Deepcode
 
 In your terminal, navigate into the GET folder, then launch Deep Code:
 
 ```
-cd ~/Documents/The-GET-main
+cd ~/Documents/The-GET
 deepcode
 ```
 
-<span class="hint">Tip: type `cd ` (with a trailing space), drag the GET folder into the terminal window so the path pastes itself, press Enter, then run `deepcode`.</span>
+<span class="hint">Tip: If you're typing instead of copy and pasting, type `cd ` (with a trailing space), drag the GET folder (literally from your Windows explorer or OSX Finder) into the terminal window so the path pastes itself, press Enter, then run `deepcode`.</span>
 
 ---
 
@@ -66,7 +71,7 @@ At the Deep Code prompt, type:
 Read the file AGENTS.md in this folder and follow it to act as The GET. Then start a GET session.
 ```
 
-<span style="color:#cb5d21">**Why the longer prompt:**</span> the first-party tools (Gemini, Claude Code, Codex) automatically read an instructions file when they start. Deep Code doesn't always do this, so we point it straight at `AGENTS.md` — the file that tells it how to be the tutor. After that, the GET behaves the same as on any other tool.
+<span style="color:#cb5d21">**Why the long prompt:**</span> the first-party tools (Gemini, Claude Code, Codex) automatically read an instructions file when they start. Deep Code doesn't always do this, so we point it straight at `AGENTS.md` — the file that tells it how to be the tutor. After that, the GET behaves the same as on any other tool.
 
 The GET greets you and asks what you're working on.
 
@@ -78,7 +83,7 @@ The GET greets you and asks what you're working on.
 
 ### It runs, but doesn't act like the tutor
 
-Two things to check: you opened **the GET folder itself** (`The-GET-main` or `The-GET`), and your prompt told Deep Code to **read `AGENTS.md`** (Chapter 3). Without that pointer, it won't load the tutor instructions.
+Two things to check: you opened **the GET folder itself** (`The-GET`), and your prompt told Deep Code to **read `AGENTS.md`** (Chapter 3). Without that pointer, it won't load the tutor instructions.
 
 ### An authentication or API-key error
 

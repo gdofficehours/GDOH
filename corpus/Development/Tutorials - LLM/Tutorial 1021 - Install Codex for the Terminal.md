@@ -26,8 +26,12 @@ publish: true
 
 ## 1. Open your terminal
 
+*The terminal is the text-based window where you type commands instead of clicking. Different name on each OS, same idea.*
+
 - **Windows:** Press the **Windows Key**, type `PowerShell`, and press Enter.
 - **macOS:** Press **Cmd + Space**, type `Terminal`, and press Enter.
+
+A window with a text prompt opens. This is where the rest of the steps go.
 
 ---
 
@@ -64,7 +68,7 @@ codex --version
 
 Press Enter. You should see a version number. If you see `not recognized` or `command not found`, close the terminal, open a fresh one, and try again.
 
-# *++++++++++ Codex is installed* — continue to [[Tutorial 1024 - Set Up The GET for Codex]].
+# *Codex is installed* — continue to [[Tutorial 1024 - Set Up The GET for Codex]].
 
 ---
 

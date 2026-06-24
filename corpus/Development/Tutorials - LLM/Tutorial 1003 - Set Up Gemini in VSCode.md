@@ -34,10 +34,10 @@ If you don't have it already:
 ## 2. Open The GET folder
 
 1. In VSCode, choose **File → Open Folder…** (or **File → Open…** on macOS).
-2. Navigate to the GET folder you downloaded in [[Tutorial 1004 - Set Up The GET for Gemini|Tutorial 1004]] (e.g., `Documents/The-GET-main` or `Documents/The-GET`).
+2. Navigate to the GET folder you downloaded in [[Tutorial 1004 - Set Up The GET for Gemini|Tutorial 1004]] (e.g., `Documents/The-GET`).
 3. Click **Select Folder** (Windows) or **Open** (macOS).
 
-VSCode opens the folder as a workspace. The left sidebar (the **Explorer**) shows the file tree — `_welcome/` (orientation docs), `agent/` (the AI's operating files), `corpus/` (the four content folders: Tutorials, Wiki, SPRs, References), `gaps/`, and `student-notes-private/`.
+VSCode opens the folder as a workspace. The left sidebar (the **Explorer**) shows the file tree — `agent/` (the AI's operating files), `corpus/` (GET Started, Design, Development), `gaps/`, and `student-notes-private/`.
 
 <span class="hint">First time you open the folder, VSCode may ask "Do you trust the authors of the files in this folder?" — pick **Yes, I trust the authors**. The GET is your downloaded content, not arbitrary code.</span>
 

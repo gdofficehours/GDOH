@@ -24,19 +24,43 @@ publish: true
 
 ---
 
-## 1. Install Node.js
+## 1. Open your terminal
 
-*Deep Code runs on **Node.js**. Install it first if you don't have it.*
+*Everything in this tutorial happens in the **terminal** — the text-based window where you type commands instead of clicking. Different name on each OS, same idea.*
 
-1. Go to [nodejs.org](https://nodejs.org/) and download the **LTS** installer for your OS.
-2. Run it, accept the defaults, then **close and reopen your terminal**.
-3. Check it worked — in the terminal, run `node -v`. A version number (like `v20.12.0`) means you're set.
+- **Windows:** Press the **Windows Key**, type `PowerShell`, and press Enter.
+- **macOS:** Press **Cmd + Space**, type `Terminal`, and press Enter.
 
-<span class="hint">To open the terminal: **Windows** — press the Windows Key, type `PowerShell`, Enter. **macOS** — Cmd + Space, type `Terminal`, Enter.</span>
+A window with a text prompt opens. This is where the rest of the steps go.
 
 ---
 
-## 2. Install Deep Code
+## 2. Install Node.js
+
+*Deep Code runs on top of **Node.js**, a runtime that lets command-line programs work on your computer. You need it installed before anything else — but you may already have it.*
+
+### A. Check if you already have Node.js
+
+In the terminal, type:
+
+```
+node -v
+```
+
+Press Enter.
+
+- If a version number prints (something like `v20.12.0`), Node.js is already installed — **skip to Step 3.**
+- If you see `command not found` (macOS) or `is not recognized` (Windows), continue to section B.
+
+### B. Install Node.js
+
+1. Go to [nodejs.org](https://nodejs.org/) and download the **LTS** installer for your OS.
+2. Run it, accept the defaults, then **close and reopen your terminal**.
+3. Verify by running `node -v` again. You should now see a version number.
+
+---
+
+## 3. Install Deep Code
 
 In the terminal:
 
@@ -54,44 +78,75 @@ You should see a version number. If you see `not recognized` or `command not fou
 
 ---
 
-## 3. Connect your DeepSeek API key
+## 4. Connect your DeepSeek API key
 
 ### A. Get the key
 
 1. Go to the DeepSeek Platform: [platform.deepseek.com/api_keys](https://platform.deepseek.com/api_keys).
-2. Create an account and add a small amount of credit (see the Important note above).
-3. Create a new API key and **copy it** — it looks like `sk-...`. You won't be able to see it again, so copy it now.
+2. Create an account and add a small amount of money, like $2 (see the note above).
+3. Create a new API key and **copy it** — it looks like `sk-...`. You won't be able to see it again, so copy it now.  Perhaps paste it into a temporary text document.
 
-### B. Save it in Deep Code's config file
+### B. Create the config file
 
-Deep Code reads its settings from a file called `settings.json` in a `.deepcode` folder in your home directory. Create it with any text editor:
+Deep Code reads its settings from a file called `settings.json` inside a `.deepcode` folder in your home directory. That folder name starts with a dot, which Windows Explorer and macOS Finder make awkward to create by hand — so we'll make the folder and file right in the terminal instead. (This also sidesteps the common Windows trap where Notepad secretly saves the file as `settings.json.txt`.)
 
-- **Windows:** `C:\Users\<your-name>\.deepcode\settings.json`
-- **macOS:** `~/.deepcode/settings.json`
+You still have the terminal open from earlier. Paste this block below for your system and press Enter — it creates the `.deepcode` folder and writes a starter `settings.json`, with a placeholder where your key will go:
 
-Paste this in, replacing `sk-...` with your key:
-
-```json
+**Windows (PowerShell):**
+```
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.deepcode" | Out-Null
+@'
 {
   "env": {
     "MODEL": "deepseek-v4-pro",
     "BASE_URL": "https://api.deepseek.com",
-    "API_KEY": "sk-..."
+    "API_KEY": "sk-REPLACE_WITH_YOUR_KEY"
   },
   "thinkingEnabled": true,
   "reasoningEffort": "max"
 }
+'@ | Set-Content -Path "$env:USERPROFILE\.deepcode\settings.json" -Encoding ascii
 ```
 
-Save the file.
+**macOS:**
+```
+mkdir -p ~/.deepcode
+cat > ~/.deepcode/settings.json <<'EOF'
+{
+  "env": {
+    "MODEL": "deepseek-v4-pro",
+    "BASE_URL": "https://api.deepseek.com",
+    "API_KEY": "sk-REPLACE_WITH_YOUR_KEY"
+  },
+  "thinkingEnabled": true,
+  "reasoningEffort": "max"
+}
+EOF
+```
 
-<span class="hint">On Windows, if your text editor adds a `.txt` ending, the file becomes `settings.json.txt` and won't work. Make sure it's saved as exactly `settings.json` (in the editor's Save dialog, set "Save as type" to **All Files**).</span>
+### C. Add your key
 
-# *++++++++++ Deep Code is installed* — continue to [[Tutorial 1034 - Set Up The GET for DeepSeek]].
+Now open that file and replace the placeholder with the real key you copied. Paste the line for your system:
+
+**Windows (PowerShell):**
+```
+notepad "$env:USERPROFILE\.deepcode\settings.json"
+```
+
+**macOS:**
+```
+open -e ~/.deepcode/settings.json
+```
+
+Find the line `"API_KEY": "sk-REPLACE_WITH_YOUR_KEY"`, swap `sk-REPLACE_WITH_YOUR_KEY` for your key from 4A (keep the quotation marks), then save and close. The line should end up reading something like `"API_KEY": "sk-9a638...your real key..."`.
+
+<span class="hint">Keep this key private — it bills to your account. Don't paste it into chats, commits, screenshots, or anywhere public.</span>
+
+# *Deep Code is installed* — continue to [[Tutorial 1034 - Set Up The GET for DeepSeek]].
 
 ---
 
-## 4. Troubleshooting
+## 5. Troubleshooting
 
 ### `deepcode` isn't recognized after installing
 

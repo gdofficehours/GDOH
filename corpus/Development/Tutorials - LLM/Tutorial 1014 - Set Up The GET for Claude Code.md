@@ -35,7 +35,7 @@ publish: true
 4. Extract the ZIP:
    - **Windows:** Right-click the downloaded file → **Extract All…**
    - **macOS:** Double-click the file in Finder.
-5. Move the resulting folder (named `The-GET-main`) to your `Documents` folder, or anywhere easy to find.
+5. Rename the resulting folder to `The-GET`, then move it to your `Documents` folder (or anywhere easy to find).
 
 <span class="hint">GitHub may cover the Download ZIP button with a "Sign in" banner. You don't need a GitHub account — dismiss the banner if it appears.</span>
 
@@ -51,7 +51,7 @@ If you already have `git` installed, this is the better path — future updates 
    ```
    git clone https://github.com/vLabUSC/The-GET.git
    ```
-3. The folder will be named `The-GET` (no `-main` suffix this time).
+3. The folder will be named `The-GET`.
 4. Later, to fetch updates: navigate into the folder and run `git pull`.
 
 ---
@@ -64,7 +64,7 @@ If you already have `git` installed, this is the better path — future updates 
 - **VSCode** — **File → Open Folder…**, pick the GET folder, then open Claude Code. (Full detail: [[Tutorial 1013 - Set Up Claude Code in VSCode|Tutorial 1013]].)
 - **Terminal** — navigate into the folder, then launch Claude Code:
   ```
-  cd ~/Documents/The-GET-main
+  cd ~/Documents/The-GET
   claude
   ```
   On the first run in a folder, Claude Code asks whether to trust it — choose **yes**; it's your own downloaded content.
@@ -97,7 +97,7 @@ Claude Code needs a paid plan (Pro, Max, Team, or Enterprise). Subscribe at [cla
 
 ### The GET greeted me but doesn't seem to know its files
 
-You opened the wrong folder. Point Claude Code at **the GET folder itself** (`The-GET-main` or `The-GET`), not your `Documents` folder or some parent.
+You opened the wrong folder. Point Claude Code at **the GET folder itself** (`The-GET`), not your `Documents` folder or some parent.
 
 ### `claude` isn't recognized (terminal)
 

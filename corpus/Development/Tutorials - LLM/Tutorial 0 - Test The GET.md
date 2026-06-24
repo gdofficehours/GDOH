@@ -12,7 +12,7 @@ publish: true
 
 ## 1. Skim the published site first
 
-Before you touch any files, casually and quickly browse the web version to get the shape of it (you can ignore the '389' section ): **https://vlabusc.github.io/The-GET/**.
+Before you touch any files, casually and quickly browse the web version to get the shape of it: **https://vlabusc.github.io/The-GET/**.
 
 The area that matters most for a first run is **Design → Storytelling** (the page is titled *Situated Player Roles*: The Investigator, The Traveler, The Entrant, and The Dreamer). Read those 4 pages — it's the heart of how the tutor thinks about an idea.
 

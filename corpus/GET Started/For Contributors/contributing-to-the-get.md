@@ -51,6 +51,8 @@ Found a game or film worth adding to the shared `corpus/Design/_References/` lib
 
 A brand-new file like this never causes a merge conflict — it's the cleanest kind of contribution.
 
+*Maintainer note: after merging any corpus addition, move, or renumber, regenerate the corpus index — `node scripts/generate-corpus-index.mjs` — and commit the updated `agent/corpus-index.md`. See `scripts/README.md`. (Students don't need to run this; the instructor does it on merge.)*
+
 ## One rule that keeps updates painless
 
 **Don't edit the bundle's own files** — the tutorials, wiki pages, charter, or skills. Those are the instructor's to maintain; editing them locally causes a merge conflict every time you pull updates. Your own work has two homes that never conflict:

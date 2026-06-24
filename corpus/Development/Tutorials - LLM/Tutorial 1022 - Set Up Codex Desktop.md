@@ -49,14 +49,14 @@ When the app opens, **sign in with your ChatGPT account** (the one carrying your
 
 You need The GET's files on your machine first. If you haven't downloaded them, do it now — full detail in [[Tutorial 1024 - Set Up The GET for Codex|Tutorial 1024, Chapter 1]]. The short version:
 
-- Go to [github.com/vLabUSC/The-GET](https://github.com/vLabUSC/The-GET) → green **`<> Code`** button → **Download ZIP** → extract → move the `The-GET-main` folder somewhere easy, like `Documents`.
+- Go to [github.com/vLabUSC/The-GET](https://github.com/vLabUSC/The-GET) → green **`<> Code`** button → **Download ZIP** → extract → rename the folder to `The-GET` and move it somewhere easy, like `Documents`.
 
 ---
 
 ## 4. Open The GET and start a session
 
 1. Make sure **Local** is selected (so Codex runs on your machine, using your files).
-2. Choose the project folder: pick The GET folder you downloaded (`The-GET-main` or `The-GET`) — the folder itself, not its parent.
+2. Choose the project folder: pick The GET folder you downloaded (`The-GET`) — the folder itself, not its parent.
 3. In the message box, type:
    ```
    Start a GET session.
@@ -76,7 +76,7 @@ Codex needs a paid ChatGPT plan (Plus, Pro, Business, Edu, or Enterprise). See [
 
 ### It greeted me but doesn't act like the tutor
 
-Make sure you opened **the GET folder itself** (`The-GET-main` or `The-GET`) — Codex reads its instructions from `AGENTS.md` in that folder, so opening a parent folder means it won't find them. If it still doesn't, ask it directly: *"Read AGENTS.md in this folder and follow it."*
+Make sure you opened **the GET folder itself** (`The-GET`) — Codex reads its instructions from `AGENTS.md` in that folder, so opening a parent folder means it won't find them. If it still doesn't, ask it directly: *"Read AGENTS.md in this folder and follow it."*
 
 ---
 

@@ -35,11 +35,13 @@ publish: true
 4. Extract the ZIP:
    - **Windows:** Right-click the downloaded file → **Extract All…**
    - **macOS:** Double-click the file in Finder.
-5. Move the resulting folder (named `The-GET-main`) to your `Documents` folder, or anywhere easy to find.
+5. Rename the resulting folder to `The-GET`, then move it to your `Documents` folder (or anywhere easy to find).
 
 <span class="hint">GitHub may cover the Download ZIP button with a "Sign in" banner. You don't need a GitHub account — dismiss it.</span>
 
 ### Option B. (lets you fetch updates later) Git clone
+
+*This path uses **Git**. Most Macs already have it. On Windows it isn't included, so install it once first: go to [git-scm.com/downloads/win](https://git-scm.com/downloads/win), run the installer, accept the defaults (leave **"Add Git to PATH"** checked), then close and reopen your terminal. (Not sure you want this path? Option A above needs no Git.)*
 
 1. In your terminal: `cd ~/Documents`
 2. Clone the repo:
@@ -58,7 +60,7 @@ The steps depend on which surface you installed:
 - **VSCode** — **File → Open Folder…**, pick the GET folder, then open the Codex panel. (Full detail: [[Tutorial 1023 - Set Up Codex in VSCode|Tutorial 1023]].)
 - **Terminal** — navigate into the folder, then launch Codex:
   ```
-  cd ~/Documents/The-GET-main
+  cd ~/Documents/The-GET
   codex
   ```
 
@@ -88,7 +90,7 @@ Codex needs a paid ChatGPT plan (Plus, Pro, Business, Edu, or Enterprise). See [
 
 ### It runs, but doesn't act like the tutor
 
-Codex reads its instructions from **`AGENTS.md`** at the root of the folder you opened. Make sure you opened **the GET folder itself** (`The-GET-main` or `The-GET`), not a parent. If it still doesn't pick it up, ask Codex directly: *"Read AGENTS.md in this folder and follow it."*
+Codex reads its instructions from **`AGENTS.md`** at the root of the folder you opened. Make sure you opened **the GET folder itself** (`The-GET`), not a parent. If it still doesn't pick it up, ask Codex directly: *"Read AGENTS.md in this folder and follow it."*
 
 ### `codex` isn't recognized (terminal)
 

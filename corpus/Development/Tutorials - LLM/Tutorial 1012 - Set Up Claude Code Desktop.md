@@ -63,7 +63,7 @@ Then launch Claude — from **Applications** (macOS) or the **Start menu** (Wind
 
 You need The GET's files on your machine before you can point Claude at them. If you haven't downloaded them yet, do it now — full detail is in [[Tutorial 1014 - Set Up The GET for Claude Code|Tutorial 1014, Chapter 1]]. The short version:
 
-- Go to [github.com/vLabUSC/The-GET](https://github.com/vLabUSC/The-GET) → green **`<> Code`** button → **Download ZIP** → extract it → move the `The-GET-main` folder somewhere easy, like `Documents`.
+- Go to [github.com/vLabUSC/The-GET](https://github.com/vLabUSC/The-GET) → green **`<> Code`** button → **Download ZIP** → extract it → rename the folder to `The-GET` and move it somewhere easy, like `Documents`.
 
 ---
 
@@ -74,7 +74,7 @@ You need The GET's files on your machine before you can point Claude at them. If
 In the Code tab's prompt area:
 
 1. Set the **environment** to **Local** (runs on your machine, reading your files directly).
-2. Click **Select folder** and choose The GET folder you downloaded (`The-GET-main` or `The-GET`) — the folder itself, not its parent.
+2. Click **Select folder** and choose The GET folder you downloaded (`The-GET`) — the folder itself, not its parent.
 
 ### B. Leave the safe defaults
 
@@ -109,7 +109,7 @@ Git isn't installed or the app hasn't noticed it. Install it from [git-scm.com/d
 
 ### The GET greeted me but doesn't seem to know its files
 
-Make sure you selected **the GET folder itself** (`The-GET-main` or `The-GET`) as the project folder — not `Documents` or some parent. Start a new session and pick the correct folder.
+Make sure you selected **the GET folder itself** (`The-GET`) as the project folder — not `Documents` or some parent. Start a new session and pick the correct folder.
 
 ### A "403" or authentication error in the Code tab
 

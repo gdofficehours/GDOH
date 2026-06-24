@@ -93,7 +93,7 @@ gemini --version
 
 You should see a version number. If you see `not recognized` or `command not found`, close the terminal window, open a fresh one, and try again — sometimes the new command isn't registered until you restart the terminal.
 
-# *++++++++++ Gemini CLI is installed* — continue to [[Tutorial 1004 - Set Up The GET for Gemini]].
+# *Gemini CLI is installed* — continue to [[Tutorial 1004 - Set Up The GET for Gemini]].
 
 ---
 

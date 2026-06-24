@@ -77,7 +77,7 @@ claude --version
 
 Press Enter. You should see a version number. If you see `not recognized` or `command not found`, close the terminal, open a new one, and try again — the command sometimes isn't registered until you restart the terminal.
 
-# *++++++++++ Claude Code is installed* — continue to [[Tutorial 1014 - Set Up The GET for Claude Code]].
+# *Claude Code is installed* — continue to [[Tutorial 1014 - Set Up The GET for Claude Code]].
 
 ---
 
